@@ -11,8 +11,8 @@ export default function SEO() {
   // Normalize host so it matches how values are stored in DB
   const rawHost = window.location.hostname || "";
   const normalizedHost = rawHost.replace(/^www\./i, "").toLowerCase();
-  // Allow overriding the site for local/dev via env (e.g. VITE_SEO_SITE=Desawarsatta.vip)
-  const site = (import.meta.env.VITE_SEO_SITE || normalizedHost || "Desawarsatta.vip").toLowerCase();
+  // Allow overriding the site for local/dev via env (e.g. VITE_SEO_SITE=desawar-satta.com)
+  const site = (import.meta.env.VITE_SEO_SITE || normalizedHost || "desawar-satta.com").toLowerCase();
 
   useEffect(() => {
     const fetchSEO = async () => {
